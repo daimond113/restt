@@ -1,0 +1,47 @@
+{
+  "name": "@restt/server",
+  "version": "0.0.0",
+  "description": "An easy way to type your Fastify API",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "types": "dist/server-alpha.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "build": "cross-env NODE_ENV=production tsup && api-extractor run",
+    "build:local": "cross-env NODE_ENV=development tsup && api-extractor run --local"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daimond113/restt.git",
+    "directory": "packages/server"
+  },
+  "keywords": [
+    "rest",
+    "types",
+    "typed"
+  ],
+  "author": {
+    "name": "daimond113",
+    "email": "contact@daimond113.com",
+    "url": "https://www.daimond113.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daimond113/restt/issues"
+  },
+  "homepage": "https://github.com/daimond113/restt#readme",
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.38.0",
+    "configs": "workspace:*",
+    "cross-env": "^7.0.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6",
+    "zod": "^3.22.4"
+  },
+  "peerDependencies": {
+    "zod": "^3.22.4"
+  }
+}

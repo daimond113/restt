@@ -1,0 +1,5410 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.38.0",
+    "schemaVersion": 1011,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@restt/server!",
+  "docComment": "",
+  "name": "@restt/server",
+  "preserveMemberOrder": false,
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@restt/server!",
+      "name": "",
+      "preserveMemberOrder": false,
+      "members": [
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@restt/server!Awaitable:type",
+          "docComment": "/**\n * Represents a value that can either be a promise or not.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type Awaitable<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "T | "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "Awaitable",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@restt/server!IResttAdapter:interface",
+          "docComment": "/**\n * Represents a {@link Restt} framework adapter.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "interface IResttAdapter "
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "IResttAdapter",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!IResttAdapter#registerRoute:member",
+              "docComment": "/**\n * This method should register a route to an HTTP framework.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "registerRoute: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "registerRoute",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@restt/server!Restt:class",
+          "docComment": "/**\n * Represents the basic building block for a Restt project.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare class Restt<Adapter extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResttAdapter",
+              "canonicalReference": "@restt/server!IResttAdapter:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResttRouter",
+              "canonicalReference": "@restt/server!ResttRouter:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<Adapter>"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "Adapter",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "isAbstract": false,
+          "name": "Restt",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@restt/server!Restt:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `Restt` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor({ adapter }: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        adapter: Adapter;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "{ adapter }",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@restt/server!Restt#router:member(1)",
+              "docComment": "/**\n * Applies a {@link ResttRouter} to this {@link Restt} instance.\n *\n * @param router - the router to apply\n *\n * @param prefix - a prefix to apply to all routes of this router, for example `/my-route` with prefix `/restt-best` would become `/restt-best/my-route`\n *\n * @returns this {@link Restt} instance\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "router<const Router extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouter",
+                  "canonicalReference": "@restt/server!ResttRouter:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Adapter>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", const Prefix extends "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": " = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(router: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Router"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", prefix?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Prefix"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this & {\n        typedData: {\n            [key in Prefix]: Router[\"typedData\"];\n        };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "Router",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                },
+                {
+                  "typeParameterName": "Prefix",
+                  "constraintTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 7
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 12,
+                "endIndex": 13
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "router",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "prefix",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 10,
+                    "endIndex": 11
+                  },
+                  "isOptional": true
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "router"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@restt/server!ResttBodyInit:type",
+          "docComment": "/**\n * Loose BodyInit so that it is not limited to specific values.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type ResttBodyInit = "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "ResttBodyInit",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@restt/server!ResttHandlerData:type",
+          "docComment": "/**\n * Represents the type of a handler's data.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type ResttHandlerData<RequestBody, BodyValidator, Params, Query, Headers, IsRequestData extends "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": " = "
+            },
+            {
+              "kind": "Content",
+              "text": "false"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    request: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Request",
+              "canonicalReference": "!Request:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    params: Params extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "AnyZodObject",
+              "canonicalReference": "zod!AnyZodObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": " ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "ZodRequestData",
+              "canonicalReference": "@restt/server!ZodRequestData:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<Params, IsRequestData> : unknown;\n    query: Query extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "AnyZodObject",
+              "canonicalReference": "zod!AnyZodObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": " ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "ZodRequestData",
+              "canonicalReference": "@restt/server!ZodRequestData:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<Query, IsRequestData> : unknown;\n    headers: Headers extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ZodType",
+              "canonicalReference": "zod!ZodType:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ResttHeadersInit",
+              "canonicalReference": "@restt/server!ResttHeadersInit:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined, any, any> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "ZodRequestData",
+              "canonicalReference": "@restt/server!ZodRequestData:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<Headers, IsRequestData> : unknown;\n    body: BodyValidator extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ZodType",
+              "canonicalReference": "zod!ZodType:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ResttBodyInit",
+              "canonicalReference": "@restt/server!ResttBodyInit:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined, any, RequestBody> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "ZodRequestData",
+              "canonicalReference": "@restt/server!ZodRequestData:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<BodyValidator, IsRequestData> : unknown;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "ResttHandlerData",
+          "typeParameters": [
+            {
+              "typeParameterName": "RequestBody",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "BodyValidator",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "Params",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "Query",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "Headers",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "IsRequestData",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 28
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@restt/server!ResttHeadersInit:type",
+          "docComment": "/**\n * Loose HeadersInit so that it is not limited to string values.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type ResttHeadersInit = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, any>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "ResttHeadersInit",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@restt/server!ResttMiddleware:type",
+          "docComment": "/**\n * Represents a Restt middleware.\n *\n * @remarks\n *\n * If it returns a {@link ResttResponse} it's an error. If it returns nothing, it is ignored. But if it returns an object each of it's properties are passed to each request handler\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type ResttMiddleware = "
+            },
+            {
+              "kind": "Content",
+              "text": "(request: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Request",
+              "canonicalReference": "!Request:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", err?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResttResponse",
+              "canonicalReference": "@restt/server!ResttResponse:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<number>) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Awaitable",
+              "canonicalReference": "@restt/server!Awaitable:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<void | object | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResttResponse",
+              "canonicalReference": "@restt/server!ResttResponse:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<number>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "ResttMiddleware",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@restt/server!ResttParseBody:type",
+          "docComment": "/**\n * Represents all possible values for {@link ResttRouteOptions.parseBody}.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type ResttParseBody<HandlerData extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResttHandlerData",
+              "canonicalReference": "@restt/server!ResttHandlerData:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<any, any, any, any, any>"
+            },
+            {
+              "kind": "Content",
+              "text": ", R = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResttStringParseBody",
+              "canonicalReference": "@restt/server!ResttStringParseBody:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | ((data: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<HandlerData, \"body\">) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Awaitable",
+              "canonicalReference": "@restt/server!Awaitable:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<R>)"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "ResttParseBody",
+          "typeParameters": [
+            {
+              "typeParameterName": "HandlerData",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "R",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 6,
+            "endIndex": 12
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@restt/server!ResttResponse:class",
+          "docComment": "/**\n * A typed web Response class.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare class ResttResponse<const Status extends "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", const Body extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "BodyInit",
+              "canonicalReference": "!BodyInit:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": " = "
+            },
+            {
+              "kind": "Content",
+              "text": "undefined"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Response",
+              "canonicalReference": "!Response:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "Status",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "Body",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            }
+          ],
+          "isAbstract": false,
+          "name": "ResttResponse",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@restt/server!ResttResponse:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ResttResponse` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(body?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Body"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", init?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResponseInit",
+                  "canonicalReference": "!ResponseInit:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " & {\n        status: Status;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "body",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "init",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttResponse#rawBody:member",
+              "docComment": "/**\n * Represents the raw body of the response.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rawBody: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Body | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "rawBody",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 8,
+            "endIndex": 9
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@restt/server!ResttRouteOptions:interface",
+          "docComment": "/**\n * Represents the options given to {@link IResttAdapter.registerRoute} and {@link ResttRouter.routeGenerator}'s register function.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "interface ResttRouteOptions<Url = "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", Response = "
+            },
+            {
+              "kind": "Content",
+              "text": "undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ", BodyValidator = "
+            },
+            {
+              "kind": "Content",
+              "text": "undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ", Params = "
+            },
+            {
+              "kind": "Content",
+              "text": "undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ", Query = "
+            },
+            {
+              "kind": "Content",
+              "text": "undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ", Headers = "
+            },
+            {
+              "kind": "Content",
+              "text": "undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ", Method = "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", RequestBody = "
+            },
+            {
+              "kind": "Content",
+              "text": "undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ", Handler = "
+            },
+            {
+              "kind": "Content",
+              "text": "(data: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResttHandlerData",
+              "canonicalReference": "@restt/server!ResttHandlerData:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<RequestBody, BodyValidator, Params, Query, Headers>) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Awaitable",
+              "canonicalReference": "@restt/server!Awaitable:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ResttResponse",
+              "canonicalReference": "@restt/server!ResttResponse:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<number>>"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "Url",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "typeParameterName": "Response",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "typeParameterName": "BodyValidator",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "typeParameterName": "Params",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            },
+            {
+              "typeParameterName": "Query",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              }
+            },
+            {
+              "typeParameterName": "Headers",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 12
+              }
+            },
+            {
+              "typeParameterName": "Method",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 13,
+                "endIndex": 14
+              }
+            },
+            {
+              "typeParameterName": "RequestBody",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 15,
+                "endIndex": 16
+              }
+            },
+            {
+              "typeParameterName": "Handler",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 17,
+                "endIndex": 24
+              }
+            }
+          ],
+          "name": "ResttRouteOptions",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!ResttRouteOptions#body:member",
+              "docComment": "/**\n * Represents the body (sent in, not sent out as response).\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "body?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "BodyValidator"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "body",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!ResttRouteOptions#handler:member",
+              "docComment": "/**\n * Represents the handler for this endpoint.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "handler: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Handler"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "handler",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!ResttRouteOptions#headers:member",
+              "docComment": "/**\n * Represents the headers sent by the api user.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "headers?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Headers"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "headers",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!ResttRouteOptions#method:member",
+              "docComment": "/**\n * Represents the method this endpoint corresponds to.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "method: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Method"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "method",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!ResttRouteOptions#params:member",
+              "docComment": "/**\n * Represents the parameters sent in the url.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "params?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Params"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "params",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!ResttRouteOptions#parseBody:member",
+              "docComment": "/**\n * Represents the function that parses the body.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "parseBody?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "RequestBody"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "parseBody",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!ResttRouteOptions#query:member",
+              "docComment": "/**\n * Represents the query parameters.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "query?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Query"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "query",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!ResttRouteOptions#response:member",
+              "docComment": "/**\n * Represents responses for a status code.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "response?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Response"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "response",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@restt/server!ResttRouteOptions#url:member",
+              "docComment": "/**\n * Represents the endpoint this route corresponds to.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Url"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "url",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@restt/server!ResttRouter:class",
+          "docComment": "/**\n * Represents the base of Restt.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare class ResttRouter<Adapter extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResttAdapter",
+              "canonicalReference": "@restt/server!IResttAdapter:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResttAdapter",
+              "canonicalReference": "@restt/server!IResttAdapter:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "Adapter",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "isAbstract": false,
+          "name": "ResttRouter",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#adapter:member",
+              "docComment": "/**\n * Returns the user provided adapter. Errors if it is not set - which shouldn't happen unless you're using the {@link ResttRouter} manually.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get adapter(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Adapter"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": true,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "adapter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#connect:member",
+              "docComment": "/**\n * Registers a route that responds to the CONNECT method.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connect: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, \"CONNECT\", ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "connect",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 72
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#delete:member",
+              "docComment": "/**\n * Registers a route that responds to the DELETE method.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "delete: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, \"DELETE\", ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "delete",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 72
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#get:member",
+              "docComment": "/**\n * Registers a route that responds to the GET method.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, \"GET\", ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "get",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 72
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#head:member",
+              "docComment": "/**\n * Registers a route that responds to the HEAD method.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "head: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, \"HEAD\", ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "head",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 72
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#middlewareArgs:member",
+              "docComment": "/**\n * Represents the additional arguments given by all middleware. DO NOT MODIFY MANUALLY.\n *\n * @remarks\n *\n * This field does not exist in a router! It is only to access the type data.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "middlewareArgs: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{}"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "middlewareArgs",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#options:member",
+              "docComment": "/**\n * Registers a route that responds to the OPTIONS method.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "options: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, \"OPTIONS\", ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "options",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 72
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#patch:member",
+              "docComment": "/**\n * Registers a route that responds to the PATCH method.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "patch: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, \"PATCH\", ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "patch",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 72
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#post:member",
+              "docComment": "/**\n * Registers a route that responds to the POST method.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "post: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, \"POST\", ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "post",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 72
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#put:member",
+              "docComment": "/**\n * Registers a route that responds to the PUT method.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "put: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, \"PUT\", ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "put",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 72
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@restt/server!ResttRouter#routeGenerator:member(1)",
+              "docComment": "/**\n * Generates a function that registers a route to the router with a method\n *\n * @remarks\n *\n * This should only be used when the router doesn't provide the method you use. For example `router.routeGenerator('GET')({})` should be `router.get({})`\n *\n * @param method - the method to use for these routes\n *\n * @returns a function that registers a route to the router\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "routeGenerator<const Method extends "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(method: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Method"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, Method, ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "Method",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 76
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "method",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "routeGenerator"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#trace:member",
+              "docComment": "/**\n * Registers a route that responds to the TRACE method.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "trace: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<const Url extends string, const Handler extends (data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, false> & this[\"middlewareArgs\"]) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaitable",
+                  "canonicalReference": "@restt/server!Awaitable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Res extends undefined ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, undefined> : { [K in keyof Res]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<K & number, Res[K & number] extends {\n        body: infer B extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any>;\n    } ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.input",
+                  "canonicalReference": "zod!input:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<B> : never>; }[keyof Res]>, const Res extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number, {\n        body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined;\n        headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined;\n    }>, const BodyValidator extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown, any, any> | undefined = undefined, const ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttParseBody",
+                  "canonicalReference": "@restt/server!ResttParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any, BodyValidator, Params, Query, Headers_1, false>, any> | undefined = undefined, const RequestBody = ParseBody extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttStringParseBody",
+                  "canonicalReference": "@restt/server!ResttStringParseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] extends (...args: any) => any ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Body",
+                  "canonicalReference": "!Body:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[ParseBody] : never>> : "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<ParseBody extends (...args: any) => any ? ParseBody : never>>, const Params extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Query extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AnyZodObject",
+                  "canonicalReference": "zod!AnyZodObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined = undefined, const Headers_1 extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHeadersInit",
+                  "canonicalReference": "@restt/server!ResttHeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined, any, any> | undefined = undefined>(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttRouteOptions",
+                  "canonicalReference": "@restt/server!ResttRouteOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Url, Res, BodyValidator, Params, Query, Headers_1, \"TRACE\", ParseBody, Handler>, \"method\">) => this & {\n        typedData: { [key in Url]: {\n            request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Omit",
+                  "canonicalReference": "!Omit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttHandlerData",
+                  "canonicalReference": "@restt/server!ResttHandlerData:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<RequestBody, BodyValidator, Params, Query, Headers_1, true>, \"request\">;\n            response: { [key_1 in keyof Res]: Res[key_1] extends {\n                body?: infer V | undefined;\n                headers?: infer H | undefined;\n            } ? {\n                body: V extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyInit",
+                  "canonicalReference": "!BodyInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<V> : unknown;\n                headers: H extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.ZodType",
+                  "canonicalReference": "zod!ZodType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HeadersInit",
+                  "canonicalReference": "!HeadersInit:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", any, any> ? "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "z.output",
+                  "canonicalReference": "zod!output:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<H> : unknown;\n            } : never; };\n        }; };\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "trace",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 72
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@restt/server!ResttRouter#typedData:member",
+              "docComment": "/**\n * Represents the route data for this router.\n *\n * @remarks\n *\n * This field does not exist in a router! It is only to access the typed data.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "typedData: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{}"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "typedData",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@restt/server!ResttRouter#use:member(1)",
+              "docComment": "/**\n * Registers a middleware to the router.\n *\n * @param middleware - the middleware to add\n *\n * @returns this {@link ResttRouter} instance\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "use<const Middleware extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttMiddleware",
+                  "canonicalReference": "@restt/server!ResttMiddleware:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(middleware: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "Middleware"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this & {\n        middlewareArgs: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Exclude",
+                  "canonicalReference": "!Exclude:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Awaited",
+                  "canonicalReference": "!Awaited:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<Middleware>>, void | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResttResponse",
+                  "canonicalReference": "@restt/server!ResttResponse:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number>>;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "Middleware",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 14
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "middleware",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "use"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@restt/server!ResttRouterData:type",
+          "docComment": "/**\n * Represents the type data for a {@link ResttRouter} instance.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type ResttRouterData = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [key: string]: {\n        request: {\n            body: unknown;\n            headers: unknown;\n            params: unknown;\n            query: unknown;\n        };\n        response: {\n            [key: number]: {\n                body: unknown;\n                headers: unknown;\n            };\n        };\n    };\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "ResttRouterData",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@restt/server!ResttStringParseBody:type",
+          "docComment": "/**\n * Represents the possible string values for {@link ResttRouteOptions.parseBody}.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type ResttStringParseBody = "
+            },
+            {
+              "kind": "Content",
+              "text": "\"json\" | \"text\" | \"blob\" | \"arrayBuffer\" | \"formData\""
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "ResttStringParseBody",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@restt/server!ZodRequestData:type",
+          "docComment": "/**\n * Utility type to get either input or output data for a zod schema.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "type ZodRequestData<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ZodTypeAny",
+              "canonicalReference": "zod!ZodTypeAny:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", Is extends "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "Is extends true ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "z.input",
+              "canonicalReference": "zod!input:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T> : "
+            },
+            {
+              "kind": "Reference",
+              "text": "z.output",
+              "canonicalReference": "zod!output:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/index.d.ts",
+          "releaseTag": "Public",
+          "name": "ZodRequestData",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "Is",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 10
+          }
+        }
+      ]
+    }
+  ]
+}

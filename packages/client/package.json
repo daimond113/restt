@@ -1,0 +1,43 @@
+{
+  "name": "@restt/client",
+  "version": "0.0.0",
+  "description": "The client API for @restt/server",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daimond113/restt.git",
+    "directory": "packages/client"
+  },
+  "keywords": [
+    "rest",
+    "types",
+    "typed"
+  ],
+  "author": {
+    "name": "daimond113",
+    "email": "contact@daimond113.com",
+    "url": "https://www.daimond113.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daimond113/restt/issues"
+  },
+  "homepage": "https://github.com/daimond113/restt#readme",
+  "devDependencies": {
+    "@restt/server": "workspace:*",
+    "configs": "workspace:*",
+    "fastify": "^4.24.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6",
+    "zod": "^3.22.4"
+  }
+}

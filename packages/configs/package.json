@@ -1,0 +1,31 @@
+{
+  "name": "configs",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "tsconfig-base.json",
+    "tsup.config.ts"
+  ],
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.38.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "peerDependencies": {
+    "@microsoft/api-extractor": "^7.32.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    },
+    "tsup": {
+      "optional": true
+    },
+    "@microsoft/api-extractor": {
+      "optional": true
+    }
+  }
+}
