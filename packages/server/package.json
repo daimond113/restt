@@ -1,14 +1,14 @@
 {
   "name": "@restt/server",
   "version": "0.0.0",
-  "description": "An easy way to type your Fastify API",
+  "description": "A very strictly typed HTTP library wrapper for TypeScript",
   "exports": {
     "import": "./dist/index.mjs",
     "require": "./dist/index.js"
   },
   "types": "dist/server-alpha.d.ts",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest run",
     "build": "cross-env NODE_ENV=production tsup && api-extractor run",
     "build:local": "cross-env NODE_ENV=development tsup && api-extractor run --local"
   },

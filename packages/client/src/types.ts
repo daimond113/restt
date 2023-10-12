@@ -1,4 +1,3 @@
-import { ResttRouterData } from "@restt/server"
 import type { RequestFn, request } from "./index"
 
 export type Split<S extends string, D extends string> = string extends S
@@ -76,3 +75,20 @@ export type ReplacePlaceholders<T extends string[]> = T extends [
 export type DefaultNullable<T, R = NonNullable<T>> = T extends null | undefined
 	? R
 	: T
+
+export type ResttRouterData = {
+	[key: string]: {
+		request: {
+			body: unknown
+			headers: unknown
+			params: unknown
+			query: unknown
+		}
+		response: {
+			[key: number]: {
+				body: unknown
+				headers: unknown
+			}
+		}
+	}
+}

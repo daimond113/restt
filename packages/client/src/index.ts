@@ -1,5 +1,4 @@
-import { ResttRouterData } from "@restt/server"
-import type { PathsToObject, StringURLToArray } from "./types"
+import type { PathsToObject, ResttRouterData, StringURLToArray } from "./types"
 
 export const request = Symbol("restt.request")
 

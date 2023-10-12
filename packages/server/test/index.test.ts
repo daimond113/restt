@@ -9,6 +9,13 @@ describe("Restt", () => {
 		adapter: {
 			registerRoute(data) {
 				routeData.push(data)
+				data.handler({
+					request: new Request(new URL("http://localhost")),
+					body: {},
+					params: {},
+					headers: {},
+					query: {},
+				})
 			},
 		},
 	})
@@ -43,11 +50,9 @@ describe("Restt", () => {
 					},
 				},
 				handler: ({ customProp }) => {
+					expect(customProp).toEqual("customValue")
 					return new ResttResponse(customProp, { status: 200 })
 				},
 			})
-
-		// @ts-expect-error
-		expect((await routeData[0].handler({})).body).toEqual("customValue")
 	})
 })
