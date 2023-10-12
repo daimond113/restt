@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./assets/logo.svg" alt="RESTT" width="300">
+    <img src="https://raw.githubusercontent.com/daimond113/restt/master/assets/logo.svg" alt="RESTT" width="300">
 </p>
 
 # Restt
